@@ -3,3 +3,8 @@ figure = go.Figure(data=[go.Candlestick(x=data["Date"],
                                         low=data["Low"], close=data["Close"])])
 figure.update_layout(title = "bitcoin Stock Price Analysis", xaxis_rangeslider_visible=False)
 figure.show()
+
+
+
+figure = px.bar(data, x = "Date", y= "Close")
+figure.show()

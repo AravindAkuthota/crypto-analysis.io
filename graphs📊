@@ -8,3 +8,9 @@ figure.show()
 
 figure = px.bar(data, x = "Date", y= "Close")
 figure.show()
+
+
+figure = px.line(data, x='Date', y='Close', 
+                 title='Stock Market Analysis with Rangeslider')
+figure.update_xaxes(rangeslider_visible=True)
+figure.show()
